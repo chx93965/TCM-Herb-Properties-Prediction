@@ -74,19 +74,27 @@ x_train = train.iloc[:, :21]
 x_test = test.iloc[:, :21]
 
 
-
 # standardize
 sc = StandardScaler()
 x_train = pd.DataFrame(sc.fit_transform(x_train))
 x_test = pd.DataFrame(sc.transform(x_test))
 
-# cross validation
-y = train.iloc[:, 21:]
-cross_val = CrossValidation(x_train, y)
-loss_per_target, mean_loss = cross_val.validate()
-print(loss_per_target.round(2))
-print(f'Cross Validation Mean Loss: {mean_loss}')
 
+'''
+**********************************************************
+UNCOMMENT THE FOLLOWING BLOCKS TO RUN INDIVIDUAL TASKS
+**********************************************************
+'''
+
+# '''
+# cross validation
+# '''
+# y = train.iloc[:, 21:]
+# cross_val = CrossValidation(x_train, y)
+# loss_per_target, mean_loss = cross_val.validate()
+# print(loss_per_target.round(2))
+# print(f'Cross Validation Mean Loss: {mean_loss}')
+#
 # '''
 # Hot
 # '''
@@ -302,7 +310,4 @@ print(f'Cross Validation Mean Loss: {mean_loss}')
 # print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
 # print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
 # trainer.plot_result('sour')
-#
-#
-#
 #

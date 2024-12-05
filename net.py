@@ -8,27 +8,28 @@ n_feature = 21
 n_output = 1
 n_hidden1 = 30
 n_hidden2 = 30
-n_hidden3 = 30
+n_hidden3 = 60
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         self.layer1 = nn.Linear(n_feature, n_hidden1)
         self.layer2 = nn.Linear(n_hidden1, n_hidden2)
-        self.layer3 = nn.Linear(n_hidden2, n_hidden3)
-        self.output = nn.Linear(n_hidden3, n_output)
+        # self.layer3 = nn.Linear(n_hidden2, n_hidden3)
+        # self.output = nn.Linear(n_hidden3, n_output)
+        self.output = nn.Linear(n_hidden2, n_output)
         self.activation = nn.ReLU()
 
     def forward(self, x):
         x = self.activation(self.layer1(x))
         x = self.activation(self.layer2(x))
-        x = self.activation(self.layer3(x))
+        # x = self.activation(self.layer3(x))
         x = self.output(x)
         return nn.Sigmoid()(x)
 
 
 class Trainer():
-    def __init__(self, learning_rate=1e-3, n_epoch=50):
+    def __init__(self, learning_rate=1e-3, n_epoch=200):
         self.learning_rate = learning_rate
         self.n_epoch = n_epoch
         self.model = Net()
