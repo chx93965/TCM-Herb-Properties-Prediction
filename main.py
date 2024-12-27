@@ -94,220 +94,219 @@ UNCOMMENT THE FOLLOWING BLOCKS TO RUN INDIVIDUAL TASKS
 # loss_per_target, mean_loss = cross_val.validate()
 # print(loss_per_target.round(2))
 # print(f'Cross Validation Mean Loss: {mean_loss}')
-#
-# '''
-# Hot
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_hot_train, x_test, y_hot_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('hot')
-#
-# '''
-# Warm
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_warm_train, x_test, y_warm_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('warm')
-#
-# '''
-# Even
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_even_train, x_test, y_even_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('even')
-#
-# '''
-# Cool
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_cool_train, x_test, y_cool_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('cool')
-#
-# '''
-# Cold
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_cold_train, x_test, y_cold_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('cold')
-#
-# '''
-# Liver
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_liver_train, x_test, y_liver_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('liver')
-#
-# '''
-# Spleen
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_spleen_train, x_test, y_spleen_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('spleen')
-#
-# '''
-# Kidney
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_kidney_train, x_test, y_kidney_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('kidney')
-#
-# '''
-# Heart
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_heart_train, x_test, y_heart_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('heart')
-#
-# '''
-# Large Intestine
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_large_intestine_train, x_test, y_large_intestine_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('large_intestine')
-#
-# '''
-# Stomach
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_stomach_train, x_test, y_stomach_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('stomach')
-#
-# '''
-# Lung
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_lung_train, x_test, y_lung_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('lung')
-#
-# '''
-# Gallbladder
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_gallbladder_train, x_test, y_gallbladder_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('gallbladder')
-#
-# '''
-# Triple Burner
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_triple_burner_train, x_test, y_triple_burner_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('triple_burner')
-#
-# '''
-# Bladder
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_bladder_train, x_test, y_bladder_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('bladder')
-#
-# '''
-# Small Intestine
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_small_intestine_train, x_test, y_small_intestine_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('small_intestine')
-#
-# '''
-# Pericardium
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_pericardium_train, x_test, y_pericardium_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('pericardium')
-#
-# '''
-# Others
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_others_train, x_test, y_others_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('others')
-#
-# '''
-# Bitter
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_bitter_train, x_test, y_bitter_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('bitter')
-#
-# '''
-# Pungent
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_pungent_train, x_test, y_pungent_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('pungent')
-#
-# '''
-# Sweet
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_sweet_train, x_test, y_sweet_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('sweet')
-#
-# '''
-# Astringent
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_astringent_train, x_test, y_astringent_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('astringent')
-#
-# '''
-# Salty
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_salty_train, x_test, y_salty_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('salty')
-#
-# '''
-# Sour
-# '''
-# trainer = net.Trainer()
-# trainer.train(x_train, y_sour_train, x_test, y_sour_test)
-# print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
-# print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
-# trainer.plot_result('sour')
-#
+
+'''
+Hot
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_hot_train, x_test, y_hot_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('hot')
+
+'''
+Warm
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_warm_train, x_test, y_warm_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('warm')
+
+'''
+Even
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_even_train, x_test, y_even_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('even')
+
+'''
+Cool
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_cool_train, x_test, y_cool_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('cool')
+
+'''
+Cold
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_cold_train, x_test, y_cold_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('cold')
+
+'''
+Liver
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_liver_train, x_test, y_liver_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('liver')
+
+'''
+Spleen
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_spleen_train, x_test, y_spleen_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('spleen')
+
+'''
+Kidney
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_kidney_train, x_test, y_kidney_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('kidney')
+
+'''
+Heart
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_heart_train, x_test, y_heart_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('heart')
+
+'''
+Large Intestine
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_large_intestine_train, x_test, y_large_intestine_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('large_intestine')
+
+'''
+Stomach
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_stomach_train, x_test, y_stomach_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('stomach')
+
+'''
+Lung
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_lung_train, x_test, y_lung_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('lung')
+
+'''
+Gallbladder
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_gallbladder_train, x_test, y_gallbladder_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('gallbladder')
+
+'''
+Triple Burner
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_triple_burner_train, x_test, y_triple_burner_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('triple_burner')
+
+'''
+Bladder
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_bladder_train, x_test, y_bladder_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('bladder')
+
+'''
+Small Intestine
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_small_intestine_train, x_test, y_small_intestine_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('small_intestine')
+
+'''
+Pericardium
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_pericardium_train, x_test, y_pericardium_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('pericardium')
+
+'''
+Others
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_others_train, x_test, y_others_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('others')
+
+'''
+Bitter
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_bitter_train, x_test, y_bitter_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('bitter')
+
+'''
+Pungent
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_pungent_train, x_test, y_pungent_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('pungent')
+
+'''
+Sweet
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_sweet_train, x_test, y_sweet_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('sweet')
+
+'''
+Astringent
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_astringent_train, x_test, y_astringent_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('astringent')
+
+'''
+Salty
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_salty_train, x_test, y_salty_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('salty')
+
+'''
+Sour
+'''
+trainer = net.Trainer()
+trainer.train(x_train, y_sour_train, x_test, y_sour_test)
+print(f'Max test accuracy at Epoch {trainer.best_epoch_accuracy}')
+print(f'Min test loss at Epoch {trainer.best_epoch_loss}')
+trainer.plot_result('sour')

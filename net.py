@@ -7,8 +7,8 @@ import numpy as np
 n_feature = 21
 n_output = 1
 n_hidden1 = 30
-n_hidden2 = 30
-n_hidden3 = 60
+n_hidden2 = 60
+# n_hidden3 = 60
 
 class Net(nn.Module):
     def __init__(self):
@@ -62,16 +62,19 @@ class Trainer():
             self.optimizer.zero_grad()
             train_loss.backward()
             self.optimizer.step()
+
             # losses
             y_pred_test = self.model(x_test)
             test_loss = self.loss_fn(y_pred_test, y_test)
             self.train_losses.append(train_loss.item())
             self.test_losses.append(test_loss.item())
+
             # accuracies
             train_accuracy = (y_pred_train.round() == y_train).float().mean().item() * 100
             test_accuracy = (y_pred_test.round() == y_test).float().mean().item() * 100
             self.train_accuracies.append(train_accuracy)
             self.test_accuracies.append(test_accuracy)
+
             # best model
             if test_accuracy > self.max_accuracy:
                 self.max_accuracy = test_accuracy
@@ -81,6 +84,7 @@ class Trainer():
                 self.min_loss = test_loss
                 self.best_model_loss = copy.deepcopy(self.model.state_dict())
                 self.best_epoch_loss = epoch
+
             # early stopping
             if test_loss > self.min_loss:
                 self.patience -= 1
